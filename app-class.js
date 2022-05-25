@@ -8,7 +8,7 @@ function getElement(selection) {
         element exists here`
     )
 }
-
+// Using class based function
 class Counter {
     constructor(element, value) {
         this.counter = element
@@ -25,7 +25,7 @@ class Counter {
         this.increase = this.increase.bind(this)
         this.decrease = this.decrease.bind(this)
         this.reset = this.reset.bind(this)
-        // sets up a function that will be called whenever the specified event is 
+        // addEventListener sets up a function that will be called whenever the specified event is
         // delivered to the target.
         this.increaseBtn.addEventListener('click', this.increase)
         this.decreaseBtn.addEventListener('click', this.decrease)
